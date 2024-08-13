@@ -9,4 +9,17 @@ body{
 canvas{
     border-style: dashed;
     margin-top: 100px;
+    animation-name: exemplo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes exemplo{
+    from{box-shadow: 1px 2px 38px green;}
+    to{box-shadow: 1px 2px 38px blue;}
+}
+
+#btn{
+    bottom: 230px;
+    position:fixed;
+    margin-left: -40px;
 }
