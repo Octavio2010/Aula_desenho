@@ -30,6 +30,7 @@ function gotResult(error,results){
     console.log(results)
     var result = results[0].label
     document.getElementById("nome_esboco").innerHTML = "nome: " + result.replace("_", " ")
+    document.getElementById("confidence").innerHTML = "porcentagem: " + Math.round(results[0].confidence * 100) + "%"
  }
 }
 
